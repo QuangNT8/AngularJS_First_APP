@@ -15,8 +15,8 @@
         </div>
         
         <div class="col-md-10" >
-            <ul>
-                <li ng-repeat="phone in $ctrl.phones | filter:$ctrl.query | orderBy:$ctrl.orderProp">
+            <ul class="phones">
+                <li ng-repeat="phone in $ctrl.phones | filter:$ctrl.query | orderBy:$ctrl.orderProp" class="thumbnail">
                     <!-- <span>{{phone.name}}</span> -->
                     <!-- <p>{{phone.snippet}}</p> -->
                     <a href="#!/phones/{{phone.id}}" class="thumb">
